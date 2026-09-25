@@ -110,8 +110,16 @@ package-root imports are not ready for use.
 The current error messages still refer to CobbLinc/Cobb because the implementation
 was adapted from that client.
 
-The `npm test` script is a placeholder that exits with an error. An automated test
-suite has not been configured.
+Run the mocked test suite with:
+
+```sh
+npm test
+```
+
+Tests use Node's built-in test runner and block real HTTP requests. Coverage includes
+vehicle and alert decoding, feed URLs, empty snapshots, fresh request timeouts,
+HTTP and network errors, body-read failures, malformed protobuf, and decoded-feed
+validation. No API key or network connection is required.
 
 ## License
 

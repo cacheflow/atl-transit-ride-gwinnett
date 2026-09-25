@@ -39,7 +39,7 @@ export default class BusService {
     const error = GtfsRealtimeBindings.transit_realtime.FeedMessage.verify(feed);
 
     if (error) {
-      throw new TypeError(`Invalid Cobb bus feed: ${error}`);
+      throw new TypeError(`Invalid Gwinnett bus feed: ${error}`);
     }
 
     return feed;
