@@ -12,7 +12,27 @@ GTFS Realtime feeds.
 Returns decoded feed snapshots with the original GTFS Realtime fields preserved.
 No API key is required.
 
-## Getting started
+## Installation
+
+Once published to npm, install the package in your project:
+
+```sh
+npm install ride-gwinnett
+```
+
+The intended package import is:
+
+```ts
+import BusService from 'ride-gwinnett';
+import type { BusFeed } from 'ride-gwinnett';
+```
+
+**Publishing prerequisite:** the current checkout points `main` at a missing
+`index.js` and does not generate TypeScript declarations. A release must include
+a working JavaScript entry point and declaration files before the package imports
+above can be used. Until then, use the source checkout as described below.
+
+## Running from source
 
 Use **Node.js 24+** to run the TypeScript source directly. From this directory:
 

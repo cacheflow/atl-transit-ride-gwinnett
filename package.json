@@ -10,6 +10,10 @@
     "gtfs-realtime-bindings": "^2.2.0"
   },
   "scripts": {
+<<<<<<< Updated upstream
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+    "test": "node specs/*.test"
+>>>>>>> Stashed changes
   }
 }
