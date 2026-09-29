@@ -13,6 +13,6 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "test": "node --test test/*.test.mjs"
+    "test": "node specs/*.test"
   }
 }
