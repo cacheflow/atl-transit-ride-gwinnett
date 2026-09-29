@@ -14,5 +14,9 @@
   },
   "scripts": {
     "test": "node --test test/*.test.mjs"
+  },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/cacheflow/atl-transit-ride-gwinnett"
   }
 }
